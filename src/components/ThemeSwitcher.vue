@@ -17,21 +17,17 @@ import { ref, watch } from 'vue';
 
 const isDarkMode = ref(false);
 
-// Detect the system theme and set isDarkMode accordingly
 const systemThemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 isDarkMode.value = systemThemeMediaQuery.matches;
 
-// Watch for changes in isDarkMode and update the system theme
 watch(isDarkMode, (newVal) => {
     document.documentElement.classList.toggle('dark', newVal);
 });
 
-// Watch for changes in the system theme preference and update isDarkMode
 systemThemeMediaQuery.addEventListener('change', (event) => {
     isDarkMode.value = event.matches;
 });
 
-// Function to toggle the system theme
 const toggleSystemTheme = () => {
     isDarkMode.value = systemThemeMediaQuery.matches;
 };
