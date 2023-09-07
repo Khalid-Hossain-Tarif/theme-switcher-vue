@@ -3,23 +3,23 @@ import ThemeSwitcher from './ThemeSwitcher.vue';
 </script>
 
 <template>
-    <div class="bg-gray-300 dark:bg-white px-10 py-2 flex items-center justify-between">
+    <header class="bg-gray-300 dark:bg-white px-10 py-2 flex items-center justify-between">
         <div>
-            <a class="text-blue-600 font-semibold">Logo</a>
+            <router-link to="/" class="text-blue-600 font-semibold">Logo</router-link>
         </div>
 
         <ThemeSwitcher />
 
         <ul class="flex justify-end items-center gap-4">
             <li>
-                <router-link>Home</router-link>
+                <router-link to="/">Home</router-link>
             </li>
             <li>
-                <router-link>About</router-link>
+                <router-link to="/about">About</router-link>
             </li>
             <li>
-                <router-link>Contact</router-link>
+                <router-link to="/contact">Contact</router-link>
             </li>
         </ul>
-    </div>
+    </header>
 </template>
