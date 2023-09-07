@@ -1,17 +1,3 @@
-<!-- <script setup>
-import { ref, watch } from 'vue';
-
-const isDarkMode = ref(false);
-
-watch(isDarkMode, (newVal) => {
-    if (newVal) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark');
-    }
-}, { immediate: true });
-</script> -->
-
 <script setup>
 import { ref, watch } from 'vue';
 
