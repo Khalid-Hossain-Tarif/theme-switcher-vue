@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark {
-  background-color: rgb(17, 17, 17);
-}
-
 body {
   @apply h-screen
+}
+
+.dark {
+  @apply bg-black
+}
+
+#theme-toggle:checked + .toggle-wrapper {
+  @apply bg-white
+}
+
+#theme-toggle:checked + .toggle-wrapper .toggle-thumb {
+  @apply bg-black left-8
 }
