@@ -4,7 +4,7 @@
 
 <template>
     <div class="p-10">
-        <h1 class="text-blue-600 dark:text-white">Home Page</h1>
+        <h1 class="text-yellow-600 dark:text-white text-4xl mb-5">Home Page</h1>
         <p class="text-gray-700 dark:text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolores repudiandae officiis eum suscipit accusamus
             necessitatibus explicabo, praesentium sunt recusandae sed. Porro debitis doloremque eaque laborum illum
